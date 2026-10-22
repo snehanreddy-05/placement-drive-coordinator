@@ -8,6 +8,17 @@ def test_live_workflow():
     assert h["status"] == "healthy"
     print("1. Health OK:", h)
 
+    # 1.5 Import synthetic student CSV
+    import os
+    csv_path = os.path.join(os.path.dirname(__file__), "..", "..", "sample_data", "sample_roster.csv")
+    if os.path.exists(csv_path):
+        with open(csv_path, "rb") as f:
+            import_resp = client.post("/students/import", files={"file": ("sample_roster.csv", f, "text/csv")}).json()
+        print("1.5. Imported CSV Roster:", import_resp["summary"])
+    else:
+        seed_resp = client.post("/students/seed-demo").json()
+        print("1.5. Seeded Demo Students:", seed_resp)
+
     # 2. Drives & Students
     drives = client.get("/drives").json()
     assert len(drives) >= 2

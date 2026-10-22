@@ -1,0 +1,7 @@
+student_id,full_name,email,branch,cgpa,active_backlogs,consent_given
+STU201,Rajesh Kumar,rajesh.kumar@campus.edu,CSE,8.10,0,TRUE
+,Missing ID Student,missing.id@campus.edu,IT,7.50,0,TRUE
+STU203,Priya Sen,priya.sen@campus.edu,ECE,12.50,0,TRUE
+STU204,Deepak Shah,deepak.shah@campus.edu,CSE,7.20,-1,TRUE
+STU201,Duplicate Rajesh,duplicate.rajesh@campus.edu,CSE,8.10,0,TRUE
+STU206,Tarun Jha,invalid-email-address,MECH,6.90,0,TRUE

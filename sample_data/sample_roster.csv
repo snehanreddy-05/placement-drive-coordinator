@@ -1,0 +1,21 @@
+student_id,full_name,email,branch,cgpa,active_backlogs,consent_given
+STU101,Aarav Sharma,aarav.sharma@campus.edu,CSE,9.20,0,TRUE
+STU102,Diya Patel,diya.patel@campus.edu,CSE,8.50,0,TRUE
+STU103,Rohan Gupta,rohan.gupta@campus.edu,IT,7.80,0,TRUE
+STU104,Ananya Verma,ananya.verma@campus.edu,ECE,6.40,1,TRUE
+STU105,Kabir Mehta,kabir.mehta@campus.edu,MECH,7.10,0,TRUE
+STU106,Ishita Rao,ishita.rao@campus.edu,CSE,6.00,0,TRUE
+STU107,Siddharth Jain,siddharth.jain@campus.edu,IT,5.80,2,TRUE
+STU108,Neha Nambiar,neha.nambiar@campus.edu,CSE,8.90,0,FALSE
+STU109,Arjun Menon,arjun.menon@campus.edu,ECE,8.10,0,TRUE
+STU110,Pooja Reddy,pooja.reddy@campus.edu,CSE,7.50,0,TRUE
+STU111,Vikram Sen,vikram.sen@campus.edu,IT,6.95,0,TRUE
+STU112,Sneha Kulkarni,sneha.kulkarni@campus.edu,ECE,7.30,1,TRUE
+STU113,Karthik Iyer,karthik.iyer@campus.edu,MECH,8.40,0,FALSE
+STU114,Tanya Saxena,tanya.saxena@campus.edu,CSE,9.60,0,TRUE
+STU115,Aditya Joshi,aditya.joshi@campus.edu,IT,6.20,0,TRUE
+STU116,Meera Nair,meera.nair@campus.edu,CSE,7.75,0,TRUE
+STU117,Gaurav Bansal,gaurav.bansal@campus.edu,IT,8.25,0,TRUE
+STU118,Rhea Pillai,rhea.pillai@campus.edu,ECE,7.00,0,TRUE
+STU119,Manish Tiwari,manish.tiwari@campus.edu,CSE,6.80,0,TRUE
+STU120,Anika Deshmukh,anika.deshmukh@campus.edu,IT,8.60,0,TRUE
