@@ -20,13 +20,19 @@ app = FastAPI(
 )
 
 # CORS configuration
-origins = [origin.strip() for origin in settings.ALLOWED_ORIGINS.split(",") if origin.strip()]
+# Parse the comma-separated ALLOWED_ORIGINS setting and always guarantee
+# the production Vercel frontend origin is present.
+PRODUCTION_ORIGIN = "https://placement-drive-coordinator-olive.vercel.app"
+origins: list[str] = [o.strip() for o in settings.ALLOWED_ORIGINS.split(",") if o.strip()]
+if PRODUCTION_ORIGIN not in origins:
+    origins.append(PRODUCTION_ORIGIN)
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins or ["*"],
+    allow_origins=origins,
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+    allow_headers=["Content-Type", "Authorization", "Accept", "X-Requested-With"],
 )
 
 # Mount API routers

@@ -8,7 +8,10 @@ class Settings(BaseSettings):
     ENVIRONMENT: str = os.getenv("ENVIRONMENT", "development")
     DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./placementos.db")
     SECRET_KEY: str = os.getenv("SECRET_KEY", "super-secret-placementos-key-change-in-prod-2026")
-    ALLOWED_ORIGINS: str = os.getenv("ALLOWED_ORIGINS", "http://localhost:3000,http://127.0.0.1:3000")
+    ALLOWED_ORIGINS: str = os.getenv(
+        "ALLOWED_ORIGINS",
+        "http://localhost:3000,http://127.0.0.1:3000,https://placement-drive-coordinator-olive.vercel.app"
+    )
     DEFAULT_TIMEZONE: str = os.getenv("DEFAULT_TIMEZONE", "Asia/Kolkata")
     
     # LLM Settings
